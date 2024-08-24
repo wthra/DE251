@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    background: url(https://media1.tenor.com/m/TAIxD-ulneYAAAAC/anime-anime-background.gif) no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 3px solid #3498db; 
+    border-radius: 10px;
+    color: #080404;
+    text-align: center;
+    padding: 10px;
+    background-color: #eaf2f8; 
+}
+
+section h2 {
+    border: 2px solid #3498db; 
+    border-radius: 8px;
+    padding: 8px;
+    color: #000000;
+    text-align: center;
+    background-color: #eaf2f8; 
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #3498db; 
+    border-radius: 10px; 
+}
+
+.gallery img {
+    border: 5px solid #3498db; 
+    border-radius: 10px; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid #3498db; 
+    padding-top: 10px;
+    margin-top: 20px;
+    color: #666;
+}

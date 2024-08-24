@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Name Display</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="500"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+
+        context.font = "40px Georgia";
+        context.lineWidth = 3;
+        context.strokeStyle = 'red';
+        
+        var x = 150; 
+        var y = 120; 
+    
+        var name = 'Phatthara';
+        var surname = 'urthe';
+        var nickname = 'win';
+        
+        context.strokeText('Name: ' + name, x, y);
+        context.strokeText('Surname: ' + surname, x, y + 50);
+        context.strokeText('Nickname: ' + nickname, x, y + 100);
+    </script>
+</body>
+</html>
