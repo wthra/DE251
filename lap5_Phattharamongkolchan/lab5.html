@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Hours and Wage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>My Sweet Bakery</h2>
+    <form id="workForm" class="form-grid">
+        <div class="form-group">
+            <label for="firstName" class="form-label">Name :</label>
+            <input type="text" id="firstName" name="firstName" class="form-control" required>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="lastName" class="form-label">Lastname :</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" required>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="wage" class="form-label">Hourly Salary :</label>
+            <input type="number" id="wage" name="wage" class="form-control" required min="0">
+        </div>
+        <br>
+
+        <table>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="monHours" min="0" max="8" step="0.01"></td>
+                <td><input type="number" id="tueHours" min="0" max="8" step="0.01"></td>
+                <td><input type="number" id="wedHours" min="0" max="8" step="0.01"></td>
+                <td><input type="number" id="thuHours" min="0" max="8" step="0.01"></td>
+                <td><input type="number" id="friHours" min="0" max="8" step="0.01"></td>
+                <td><input type="number" id="satHours" min="0" max="8" step="0.01"></td>
+                <td><input type="number" id="sunHours" min="0" max="8" step="0.01"></td>
+            </tr>
+        </table>
+
+        <div class="form-group full-width">
+            <button type="button" class="btn btn-primary" onclick="processWage()">Process</button>
+        </div>
+
+        <div class="form-group full-width">
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+    </form>
+
+    <form id="resultForm" class="form-grid result-form" style="margin-top: 20px; display:none;">
+        <div class="form-group full-width">
+            <label for="fullName" class="form-label">Username:</label>
+            <input type="text" id="fullName" name="fullName" class="form-control" readonly>
+        </div>
+
+        <div class="form-group full-width">
+            <label for="weeklyWage" class="form-label">ค่าจ้างรายสัปดาห์:</label>
+            <input type="text" id="weeklyWage" name="weeklyWage" class="form-control" readonly>
+        </div>
+    </form>
+</div>
+
+<script src="wwwq.js"></script>
+</body>
+</html>
